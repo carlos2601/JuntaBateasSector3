@@ -93,20 +93,20 @@ body, html {
 
     #contenido-certificado {
       width: 21cm;
-      height: 27.7cm;
-      margin: auto;
-      padding: 1cm 2.5cm;
-      background-image: url('logo.jpg');
-      background-position: center 0%;
-      background-repeat: no-repeat;
-      background-size: 85%;
-      background-attachment: local;
-      background-blend-mode: lighten;
-      box-sizing: border-box;
-      position: relative;
-      overflow: hidden;
-      visibility: hidden;
-      pointer-events: none;
+    height: 27.7cm;
+    margin: auto;
+    padding: 1cm 2.5cm;
+    background-image: url('logo.jpg');
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-attachment: local;
+    background-blend-mode: lighten;
+    box-sizing: border-box;
+    position: absolute;
+    top: -9999px;
+    visibility: hidden;
+    pointer-events: none;
     }
 
     .firma-sobre-nombre,
@@ -155,7 +155,7 @@ body, html {
     <h3 style="margin: 0;">BARRIO BATEAS</h3>
     <p id="fecha-actual" style="margin-top: 5px; font-weight: bold; color: #6c757d; font-size: 14px; opacity: 0.8;"></p>
 
-    <p id="fecha-actual" style="margin-top: 5px; font-weight: bold;"></p>
+    
   </div>
   
   <div class="fecha" id="fechaActual"></div>
@@ -191,7 +191,9 @@ body, html {
   const credenciales = {
     "Liliana Londoño": "Linda0127",
     "Carlos Quiñones": "Linda0127",
-    "Carlos2601": "1"
+    "Carlos2601": "1",
+    "Carlos": "4438681",
+    "Liliana": "42775182"
   };
 
   function verificarAcceso() {
